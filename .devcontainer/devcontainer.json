@@ -1,0 +1,9 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "UEFI Dev Container",
+	"image": "ghcr.io/tianocore/containers/fedora-35-dev:latest",
+	"postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+	"forwardPorts": [5000],
+	"privileged": true
+}
